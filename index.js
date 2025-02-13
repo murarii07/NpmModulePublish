@@ -1,4 +1,24 @@
-function greeting(name) {
-  return "Hello" + name + "   !!!";
+function add(a, b) {
+  return a + b;
 }
-export default greeting;
+
+function subtract(a, b) {
+  return a - b;
+}
+
+function multiply(a, b) {
+  return a * b;
+}
+
+function divide(a, b) {
+  if (b === 0) {
+    return "Error: Division by zero";
+  }
+  return a / b;
+}
+export const calculator = {
+  add,
+  subtract,
+  multiply,
+  divide,
+};
